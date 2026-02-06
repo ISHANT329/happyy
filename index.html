@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Teddy Day</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+
+  .card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: float 4s ease-in-out infinite;
+    max-width: 420px;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+
+  h1 {
+    color: #e75480;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .teddy-img {
+    width: 200px;
+    margin: 20px auto;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: rise 6s linear infinite;
+    opacity: 0.7;
+  }
+
+  @keyframes rise {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-800px) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  footer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+  <div class="heart" style="left:30%; animation-delay:2s;">💖</div>
+  <div class="heart" style="left:50%; animation-delay:4s;">💕</div>
+  <div class="heart" style="left:70%; animation-delay:1s;">❤️</div>
+  <div class="heart" style="left:90%; animation-delay:3s;">💗</div>
+
+  <div class="card">
+    <img 
+      src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" 
+      alt="Teddy Bear" 
+      class="teddy-img"
+    >
+
+    <h1>Happy Teddy Day 🧸</h1>
+    <p>
+      This teddy brings you hugs,<br>
+      love, warmth, and smiles 🤍<br>
+      Just like my feelings for you 💕
+    </p>
+
+    <footer>Forever yours 💝</footer>
+  </div>
+
+</body>
+</html>
